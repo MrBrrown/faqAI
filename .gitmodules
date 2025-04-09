@@ -1,0 +1,8 @@
+[submodule "faqAI-back"]
+	path = faqAI-back
+	url = https://github.com/MrBrrown/faqAI-back.git
+	branch = main
+[submodule "faqAI-bot"]
+	path = faqAI-bot
+	url = https://github.com/MrBrrown/faqAI-bot.git
+	branch = main
