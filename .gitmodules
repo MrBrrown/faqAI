@@ -6,3 +6,7 @@
 	path = faqAI-bot
 	url = https://github.com/MrBrrown/faqAI-bot.git
 	branch = main
+[submodule "ai-chat"]
+	path = ai-chat
+	url = https://github.com/mikhailmogilnikov/ai-chat.git
+	branch = master
