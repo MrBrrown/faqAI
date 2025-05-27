@@ -5,3 +5,17 @@ services:
       - ./faqAI-bot/.env
     environment:
       - BACKEND_URL=http://backend:8000
+    networks:
+      - app-network
+
+  frontend:
+    build: ./ai-chat
+    environment:
+      - VITE_API_URL=http://backend:8000
+    networks:
+      - app-network
+    ports:
+      - "8080:80"
+
+networks:
+  app-network:
