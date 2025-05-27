@@ -1,0 +1,7 @@
+services:
+  tg_bot:
+    build: ./faqAI-bot
+    env_file:
+      - ./faqAI-bot/.env
+    environment:
+      - BACKEND_URL=http://backend:8000
