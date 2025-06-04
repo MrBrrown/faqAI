@@ -8,6 +8,15 @@ services:
     networks:
       - app-network
 
+  backend:
+    build: ./faqAI-back
+    env_file:
+      - ./faqAI-back/.env
+    ports:
+     - "8000:8000"
+    networks:
+      - app-network
+
   frontend:
     build: ./ai-chat
     environment:
